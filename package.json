@@ -1,0 +1,30 @@
+{
+  "name": "@avaion/m2h",
+  "version": "0.0.0",
+  "description": "convert markdown to html using showdown",
+  "main": "index.js",
+  "bin": {
+    "m2h": "./index.js"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thompsgr/m2h.git"
+  },
+  "keywords": [
+    "markdown",
+    "html",
+    "converter"
+  ],
+  "author": "Geoffrey R. Thompson <geoff@avaion.com> (http://www.avaion.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thompsgr/m2h/issues"
+  },
+  "homepage": "https://github.com/thompsgr/m2h#readme",
+  "dependencies": {
+    "showdown": "^1.9.0"
+  }
+}
