@@ -1,6 +1,6 @@
 {
   "name": "@avaion/m2h",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "convert markdown to html using showdown",
   "main": "index.js",
   "bin": {
