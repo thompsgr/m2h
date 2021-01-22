@@ -24,7 +24,5 @@
     "url": "https://github.com/thompsgr/m2h/issues"
   },
   "homepage": "https://github.com/thompsgr/m2h#readme",
-  "dependencies": {
-    "showdown": "^1.9.0"
-  }
+  "dependencies": {}
 }
