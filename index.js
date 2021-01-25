@@ -30,9 +30,15 @@ files.forEach(function(file) {
     process.stdout.write(`.`);    
     toc += `\t\t<li><a href='${file.name}.html'>${file.name}</a></li>\n`;
     data = fs.readFileSync(`${indir}/${file.name}.${file.ext}`, 'utf8');
+    /*
     let htmlText = data
-        .replace(/^## (.*$)/gim, '<h2>$1</h2>')    
-	.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+        .replace(/^### (.*)$/gm, '<h3>$1</h3>')    
+        .replace(/^## (.*)$/gm, '<h2>$1</h2>')    
+	.replace(/^# (.*)$/gm, '<h1>$1</h1>')
+	.replace(/`{3}\n((.+\n)*)`{3}/gm, '<pre><code>\n$1</code></pre>')
+	.replace(/(^\d+\. )(.+$)/gm, '<li>$2</li>');
+    */
+    
     fs.writeFileSync(`${outdir}/${file.name}.html`, htmlText);
 });
 process.stdout.write('done\n');
